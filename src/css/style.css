@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body{
+    background-color: #333;
+    color: #fff;
+    font-family: "Open Sans",
+        sans-serif;
+        font-weight: 300;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #222;
+    padding-left: 100px;
+}
+.user_main{
+    margin: 50px 100px;
+    width: 50%;
+    float: left;
+
+}
+.sidebar{
+    width: 20%;
+    margin-top: 50px;
+    margin-left: 5%;
+    float: left;
+}
+
+.user_main .invidual{
+    margin-bottom: 50px;
+    background-color: #111;
+    padding: 20px;
+}
+.edit_icon{
+    float: right;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-right: 3px;
+}
+.delete_icon{
+    float: right;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.delete_icon:hover{
+    color: rgb(175, 11, 11);
+
+}
+.edit_icon:hover{
+    color: rgb(17, 111, 235);
+}
+.form_element{
+    width: 90%;
+    padding: 15px 5%;
+    font-family:  "Open Sans",
+            sans-serif;
+        font-weight: 300;
+    margin-bottom: 10px;
+    border: 0;
+    background: #222;
+    outline: none;
+    font-size: 15px;
+    color:#fff;
+}
+.form_btn{
+    color: #fff;
+    cursor: pointer;
+    transition: transform 500ms ease;
+}
+.form_btn:hover{
+    transform: scale(1.1);
+
+}
+.form_happy{
+    margin-bottom: 10px;
+}
+.floating_input{
+    width: 90%;
+    padding: 15px 5%;
+    font-family: "Open Sans",
+            sans-serif;
+        font-weight: 300;
+    margin-bottom: 10px;
+    border: 0;
+    background: #222;
+    outline: none;
+    font-size: 15px;
+    color: #fff;
+}
+.floating_label{
+    position: absolute;
+    top: 15px;
+    left: 5%;
+    font-family: "Open Sans",
+            sans-serif;
+        font-weight: 300;
+    color: #777;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+.formwrap{
+    position: relative;
+}
+.floating_input:focus + .floating_label,
+.floating_input:not(:placeholder-shown) + .floating_label{
+    top: -10px;
+    left: 5%;
+    color: #666;
+    font-size: 12px;
+}
+.check{
+    margin: 10px;
+}
+.edit_form {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-top: 20px;
+    transition:
+        max-height 2s ease,
+        opacity 0.4s ease;
+}
+
+.edit_form.open {
+    max-height: 1000px;
+    opacity: 1;
+}
+.edit_form.closed {
+    max-height: 0;
+    opacity: 0;
+}
+.happy_wrap{
+    width: 70%;
+}
+.edit_form .formwrap{
+    margin-top: 20px;
+    
+}
+.edit_form .form_btn{
+    margin-top: 20px;
+}
+.edit_form .form_btn:hover {
+    transform: scale(1.03);
+}
+.users_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.users_container .invidual{
+    transition: transform 0.5s ease, opacity 0.5s ease, margin 0.5s ease, padding 0.5s ease, height 0.5s ease;
+        position: relative;
+        overflow: hidden;
+}
+.users_container .invidual.deleting {
+    transform: translateX(-100%);
+    opacity: 0;
+        margin: 0;
+        padding: 0;
+        height: 0;
+        transition: transform 0.5s ease, opacity 0.5s ease, margin 0.5s ease, padding 0.5s ease, height 0.5s ease;
+}
+
+.header_panel {
+    width: 40%;
+    float: right;
+}
+.header_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 61%;
+}
+.search_user {
+    border: 0;
+    outline: none;
+    font-family: "Open Sans",
+    sans-serif;
+    font-weight: 300;
+    width: 90%;
+    height: 100%;
+    background: #333;
+    padding: 5%;
+    color: #fff;
+}
+.search_container {
+    background: #333;
+    display: flex;
+    width: 50%;
+    height: 40px;
+    
+}
+.icon_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+}
+
+
