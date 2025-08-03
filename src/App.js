@@ -11,7 +11,7 @@ class App extends React.Component {
             users: [
                 {
                     "id": 1,
-                    "firstname": "Nigger",
+                    "firstname": "Alice",
                     "lastname": "Johnson",
                     "bio": "Loves painting and reading mystery novels.",
                     "age": 24,
